@@ -1,0 +1,60 @@
+<ion-view>
+      <link href="../css/carrierastudent.css" rel="stylesheet">
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h5 class="title">{{carriera.carriera}}</h5>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="logout()">Logout</button>
+    </div>
+    <div class="buttons">
+      <button class="button button-clear" ui-sref="student">Menu</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+    <h3>Carriera: </h3>
+        <label class="item item-input">
+            gemometria:
+            <ul>
+                <li>voto:{{carriera.msg.gemometria.voto}}</li>
+                <li>data:{{carriera.msg.gemometria.data}}</li>
+                <li>cfu:{{carriera.msg.gemometria.cfu}}</li>
+                <li>anno:{{carriera.msg.gemometria.anno}}</li>
+            </ul>
+        </label>
+        <label class="item item-input">
+            analisi: <ul>
+                <li>voto:{{carriera.msg.analisi.voto}}</li>
+                <li>data:{{carriera.msg.analisi.data}}</li>
+                <li>cfu:{{carriera.msg.analisi.cfu}}</li>
+                <li>anno:{{carriera.msg.analisi.anno}}</li>
+            </ul>
+        </label>
+        <label class="item item-input">
+            logica:  <ul>
+                <li>voto:{{carriera.msg.logica.voto}}</li>
+                <li>data:{{carriera.msg.logica.data}}</li>
+                <li>cfu:{{carriera.msg.logica.cfu}}</li>
+                <li>anno:{{carriera.msg.logica.anno}}</li>
+            </ul>
+        </label>
+        <label class="item item-input">
+            fisica: <ul>
+                <li>voto:{{carriera.msg.fisica.voto}}</li>
+                <li>data:{{carriera.msg.fisica.data}}</li>
+                <li>cfu:{{carriera.msg.fisica.cfu}}</li>
+                <li>anno:{{carriera.msg.fisica.anno}}</li>
+            </ul>
+        </label>
+        <label class="item item-input">
+            ricerca operativa:  <ul>
+                <li>voto:{{carriera.msg.ricerca_operativa.voto}}</li>
+                <li>data:{{carriera.msg.ricerca_operativa.data}}</li>
+                <li>cfu:{{carriera.msg.ricerca_operativa.cfu}}</li>
+                <li>anno:{{carriera.msg.ricerca_operativa.anno}}</li>
+            </ul>
+        </label>
+
+    
+
+    </ion-content>
+</ion-view>

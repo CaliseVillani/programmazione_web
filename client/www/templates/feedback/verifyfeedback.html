@@ -1,0 +1,85 @@
+<ion-view>
+  <ion-header-bar  class="bar-positive">
+    <h3 class="title" style="overflow:visible">Feedback</h3>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="logout()">Logout</button>
+    </div>
+    <div class="buttons">
+      <button class="button button-clear" ui-sref="admin">Menu</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+            <div id="ricerca" style="width:100%;height:100px;padding-left:10px;">
+                <div id="testo"><h3>Sei interessato a:</h3></div>
+                    <div id="input">    
+                        <input style="background-color:#387ef5;" type="text" ng-model="query" placeholder="stai cercando..."/>
+                </div>
+            </div> 
+
+            <div class="table-responsive"><!-- div contenitore della tabella -->
+                <table class="table table-bordered table-hover table-striped "><!-- coppia di tag che definisce la tabella -->
+                    <thead><!-- sezione delle intestazioni -->
+                        <tr><!-- riga delle intestazioni -->
+                            <th>Nome</th><!-- cella di intestazione (seguono le altre 3) -->
+                            <th>Cognome</th>
+
+                            
+                        </tr>
+                    </thead>
+                    <tbody><!-- corpo della tabella -->
+                        <tr ng-repeat="doc in prof| filter:query"><!-- prima riga della tabella (seguono le altre) -->
+                            <td>{{doc.firstname}}</td><!-- prima cella della prima riga (seguono le altre) -->
+                            <td>{{doc.lastname}}</td>                                 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th> Scegli il professore: </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select ng-model="appello.id" >
+                                    <option  ng-repeat="doc in prof| filter:query" value="{{doc._id}}">{{doc.firstname}} {{doc.lastname}}</option>
+                                    <option selected value="">Scegli...</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        <button class="button button-full button-positive" ng-click="verifyFeedback(appello)"> 
+        Conferma  </button>
+
+            <h3>feedback trovati:</h3>
+
+        <div class="table-responsive"><!-- div contenitore della tabella -->
+                <table class="table table-bordered table-hover table-striped "><!-- coppia di tag che definisce la tabella -->
+                    <thead><!-- sezione delle intestazioni -->
+                        <tr><!-- riga delle intestazioni -->
+                            <th>Professore </th><!-- cella di intestazione (seguono le altre 3) -->
+                            <th>testo</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody><!-- corpo della tabella -->
+                        <tr ng-repeat="x in feedback| filter:query"><!-- prima riga della tabella (seguono le altre) -->
+                            <td>{{x.firstname}} {{x.lastname}} </td><!-- prima cella della prima riga (seguono le altre) -->
+                            <td>{{x.testo}}</td>
+                                                        
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+    </ion-content>
+</ion-view>

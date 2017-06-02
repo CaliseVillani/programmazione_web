@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="bar-positive">
+    <link href="../css/carrierastudent.css" rel="stylesheet">
+    <h1 class="title">Crea Appello</h1>
+    <div class="buttons">
+        <button class="button button-clear" ng-click="logout()">Logout</button>
+    </div>
+    <div class="buttons">
+      <button class="button button-clear" ui-sref="prof">Menu</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+    
+<form name="myForm" novalidate>
+    
+        <h3>Data dell'esame</h3>
+    <div class="list">
+      <label class="item item-input">
+        <input type="datetime-local"  ng-model="appello.data" >
+    </label>
+        
+</form>
+      
+    </div>
+    <button class="button button-full button-balanced" ng-click="addAppello(appello)">      Crea Appello    </button>
+
+  </ion-content>
+</ion-view>

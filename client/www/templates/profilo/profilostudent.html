@@ -1,0 +1,50 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">Profilo</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="logout()">Logout</button>
+    </div>
+    <div class="buttons">
+      <button class="button button-clear" ui-sref="student">Menu</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+    <h3>Info Studente </h3>
+        <label class="item item-input">
+            Email: {{currentaccount.email}}
+        </label>
+        <label class="item item-input">
+            Firstname: {{currentaccount.firstname}}
+        </label>
+        <label class="item item-input">
+            Lastname: {{currentaccount.lastname}}
+        </label>
+        <label class="item item-input">
+            Data di nascita: {{currentaccount.bod}}
+        </label>
+        <label class="item item-input">
+            Gender: {{currentaccount.gender}}
+        </label>
+        <label class="item item-input">
+            Corso: {{currentaccount.corso}}
+        </label>
+        <label class="item item-input">
+            Address:<input type="text" value="{{currentaccount.address}}" name="address" placeholder="address" ng-model="currentaccount.address">
+        </label>
+        <label class="item item-input">
+            Cell:<input type="text"  placeholder="cell" value="{{currentaccount.cell}}" name="cell" ng-model="currentaccount.cell">
+        </label>
+        
+        <button class="button button-full button-balanced" ng-click="update()">
+            Aggiorna profilo
+        </button>
+   
+        
+        <button class="button button-full button-positive" ng-click="ShowCarriera()">
+            Mostra Carriera
+        </button>
+         
+
+    </ion-content>
+</ion-view>

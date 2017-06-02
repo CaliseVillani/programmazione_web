@@ -1,0 +1,58 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h5 class="title">{{carriera.carriera}}</h5>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="logout()">Logout</button>
+    </div>
+    <div class="buttons">
+      <button class="button button-clear" ui-sref="student">Menu</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+    <h3>Carriera: </h3>
+        <label class="item item-input">
+            molecular_biology:
+            <ul>
+                <li>voto:{{carriera.msg.molecular_biology.voto}}</li>
+                <li>data:{{carriera.msg.molecular_biology.data}}</li>
+                <li>cfu:{{carriera.msg.molecular_biology.cfu}}</li>
+                <li>anno:{{carriera.msg.molecular_biology.anno}}</li>
+            </ul>
+        </label>
+        <label class="item item-input">
+            analisi: <ul>
+                <li>voto:{{carriera.msg.analisi.voto}}</li>
+                <li>data:{{carriera.msg.analisi.data}}</li>
+                <li>cfu:{{carriera.msg.analisi.cfu}}</li>
+                <li>anno:{{carriera.msg.analisi.anno}}</li>
+            </ul>
+        </label>
+        <label class="item item-input">
+            zoologia:  <ul>
+                <li>voto:{{carriera.msg.zoologia.voto}}</li>
+                <li>data:{{carriera.msg.zoologia.data}}</li>
+                <li>cfu:{{carriera.msg.zoologia.cfu}}</li>
+                <li>anno:{{carriera.msg.zoologia.anno}}</li>
+            </ul>
+        </label>
+        <label class="item item-input">
+            botanica: <ul>
+                <li>voto:{{carriera.msg.botanica.voto}}</li>
+                <li>data:{{carriera.msg.botanica.data}}</li>
+                <li>cfu:{{carriera.msg.botanica.cfu}}</li>
+                <li>anno:{{carriera.msg.botanica.anno}}</li>
+            </ul>
+        </label>
+        <label class="item item-input">
+            computer science:  <ul>
+                <li>voto:{{carriera.msg.computer_science.voto}}</li>
+                <li>data:{{carriera.msg.computer_science.data}}</li>
+                <li>cfu:{{carriera.msg.computer_science.cfu}}</li>
+                <li>anno:{{carriera.msg.computer_science.anno}}</li>
+            </ul>
+        </label>
+
+
+    </ion-content>
+</ion-view>

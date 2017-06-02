@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body {
+    background-color: black;
+}
+
+#logo{
+    position:absolute;
+    z-index: 1;
+    left: 115px;
+    top:30px;
+    
+}
+.button-positive{
+    top: -10px;
+
+}
+.button-positive4{
+    top: -10px;
+
+}
+.button-positive1 {
+    position:relative;
+    background-image: url('/img/informatica.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: red;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+.button-positive2{
+    background-image: url('/img/biologia.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: red;
+    text-align: left;
+    width: 100%;
+
+
+
+
+}
+.button-positive3{
+    background-image: url('/img/matematica.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: red;
+    text-align: left;
+    width: 100%;
+}
+.facolta{
+    position: absolute;
+    width: 100%;
+    top:150px;
+}
+.title{
+    left: 94;
+}

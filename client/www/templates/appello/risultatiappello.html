@@ -1,0 +1,66 @@
+    <ion-view>
+        <ion-header-bar align-title="center" class="bar-positive">
+            <h1 class="title">risultati appello</h1>
+            <div class="buttons">
+                <button class="button button-clear" ng-click="logout()">Logout</button>
+            </div>
+            <div class="buttons">
+                <button class="button button-clear" ui-sref="student">Menu</button>
+            </div>
+        </ion-header-bar>
+        <ion-content class="padding">
+
+            <div id="ricerca" style="width:100%;height:100px;padding-left:10px;">
+                <div id="testo"><h3>Sei interessato a:</h3></div>
+                    <div id="input">    
+                        <input style="background-color:#387ef5;" type="text" ng-model="query" placeholder="stai cercando..."/>
+                </div>
+            </div> 
+
+            <div class="table-responsive"><!-- div contenitore della tabella -->
+                <table class="table table-bordered table-hover table-striped "><!-- coppia di tag che definisce la tabella -->
+                    <thead><!-- sezione delle intestazioni -->
+                        <tr><!-- riga delle intestazioni -->
+                            <th>Esame</th><!-- cella di intestazione (seguono le altre 3) -->
+                            <th>Data</th>
+                            <th>voto Prov.</th>
+                        </tr>
+                    </thead>
+                    <tbody><!-- corpo della tabella -->
+                        <tr ng-repeat="elenco in elenco|filter:query|filter:elenco.voto_definitivo==!null"><!-- prima riga della tabella (seguono le altre) -->
+                            <td>{{elenco.esame}}</td><!-- prima cella della prima riga (seguono le altre) -->
+                            <td>{{elenco.data}} Ora: {{elenco.ora}}</td>
+                            <td>{{elenco.voto_provvisorio}}</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th> <h3>Scegli l'appello di cui vuoi confermare il voto</h3>  </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select ng-model="appello.id" >
+                                    <option  ng-repeat="elenco in elenco" value="{{elenco.appello_id}}">{{elenco.esame}} {{elenco.data}} {{elenco.ora}} </option>
+                                    <option selected value="">Scegli...</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>     
+
+            
+        
+        <button class="button button-full button-balanced" ng-click="confermaVoto(appello)">        Conferma Voto    </button>
+
+
+    </ion-content>
+</ion-view>
