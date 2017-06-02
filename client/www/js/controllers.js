@@ -200,27 +200,9 @@ angular.module("starter")
     AuthService.logout();
     $state.go('outsidehome');
   };
- 
-    $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-    $scope.series = ['Series A', 'Series B'];
-    $scope.data = [
-        [65, 59, 80, 81, 56, 55, 40],
-        [28, 48, 40, 19, 86, 27, 90]
-    ];
- 
-
 
 })
-.controller("ExampleController", function($scope) {
- 
-    $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-    $scope.series = ['Series A', 'Series B'];
-    $scope.data = [
-        [65, 59, 80, 81, 56, 55, 40],
-        [28, 48, 40, 19, 86, 27, 90]
-    ];
- 
-})
+
 //############################################## CONTROLLER PER LA PAGINA DI MATEMATICA
 .controller('MatematicaCtrl', function($scope, AuthService, $ionicPopup, $state) {
   $scope.logout = function() {
