@@ -195,7 +195,7 @@ angular.module("starter")
 })
 
 //############################################## CONTROLLER PER LA PAGINA D'INFORMATICA
-.controller('InformaticaCtrl', function($scope, AuthService, $ionicPopup, $state , Chart) {
+.controller('InformaticaCtrl', function($scope, AuthService, $ionicPopup, $state) {
   $scope.logout = function() {
     AuthService.logout();
     $state.go('outsidehome');
