@@ -23,7 +23,14 @@ https://www.youtube.com/watch?v=sYJh6m3IWIU&t=231s
 ########################################################
  
 Link dell'app deployata su Heroku:
+
 https://pianodistudi.herokuapp.com/
+
+########################################################
+
+Link ToDo list on Trello:
+
+https://trello.com/b/LJxIdR7o/progetto-programmazione-web
 
 ########################################################
 
