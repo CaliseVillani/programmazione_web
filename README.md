@@ -8,8 +8,8 @@ Antonio Villani 090099 antonio.villani@studenti.unicam.it
 
 ########################################################
 
- Il file .env è inseirto all'interno del git.
- per cambiare il database modificare la riga DB_URI con il collegamento al vostro database.
+ Il file .env è inserIto all'interno del git.
+ Per cambiare il database modificare la riga DB_URI con il collegamento al vostro database.
  
  L'ottimizzazione è gestita per l'utilizzo da smartphone
  
