@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=sYJh6m3IWIU&t=231s
  
 ########################################################
  
-Link app deployata su Heroku:
+Link dell'app deployata su Heroku:
 https://pianodistudi.herokuapp.com/
 
 ########################################################
@@ -38,7 +38,7 @@ Nota: all'interno del file .env è già presente il collegamento al database.
     
 ########################################################
 
-Descrizione del architettura ed organizzazione dei file:
+Descrizione dell'architettura ed organizzazione dei file:
 
 -Look n Feel (in questa cartella è presente una rappresentazione grafica di tutte le viste dell'app)
 
