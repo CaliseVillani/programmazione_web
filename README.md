@@ -1,18 +1,30 @@
--link all’app deployata su heroku
--procedura per far partire in locale il progetto
--procedura per deployare
--descrizione dell’architettura del codice e delle cartelle
--link ai wireframe
--nome e cognome di tutti gli studenti del gruppo con numero di matricola
--link youtube
- 
+PROGRAMMAZIONE WEB ANNO ACCADEMICO 2016/17
+
+PROGETTO REALIZZATO DA:
+
+Francesco Calise 090286 francesco.calise@studenti.unicam.it
+Antonio Villani 090099 antonio.villani@studenti.unicam.it
+
+########################################################
+
  Il file .env è inseirto all'interno del git.
  per cambiare il database modificare la riga DB_URI con il collegamento al vostro database.
  
  L'ottimizzazione è gestita per l'utilizzo da smartphone
  
+########################################################
+
+Link della presentazione su youtube:
+
+https://www.youtube.com/watch?v=sYJh6m3IWIU&t=231s
+ 
+ 
+########################################################
+ 
 Link app deployata su Heroku:
 https://pianodistudi.herokuapp.com/
+
+########################################################
 
 Procedura per far partire il programma in locale:
 Scaricare l'archivio, estrarre il contenuto e dalla route della cartella aprire il terminale e digitare:
@@ -23,7 +35,13 @@ Nota: all'interno del file .env è già presente il collegamento al database.
     account admin già presente nel database:
     username:admin  password:admin
     
+########################################################
+
 Descrizione del architettura ed organizzazione dei file:
+
+-Look n Feel (in questa cartella è presente una rappresentazione grafica di tutte le viste dell'app)
+
+-FlowChart (in questa cartella è presente il flow chart)
 
 Route
  -Server (in questa cartella sono presenti tutti i file per la gestione del server)
@@ -52,12 +70,7 @@ Route
 server.js
 
 .env
- 
- Progetto realizzato da:
- Francesco Calise 090286 francesco.calise@studenti.unicam.it
- Antonio Villani 090099 antonio.villani@studenti.unicam.it
- 
- 
+  
  
  ###################### GUIDA AL .ENV
  
