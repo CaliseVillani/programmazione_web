@@ -34,6 +34,12 @@ https://trello.com/b/LJxIdR7o/progetto-programmazione-web
 
 ########################################################
 
+Link SlideShare:
+
+https://www.slideshare.net/secret/K3UzNKLQGL6ofu
+
+########################################################
+
 Procedura per far partire il programma in locale:
 Scaricare l'archivio, estrarre il contenuto e dalla route della cartella aprire il terminale e digitare:
 -nodemon server.js
